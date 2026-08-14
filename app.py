@@ -46,7 +46,7 @@ def hello():
     return render_template("home.html", vagas=VAGAS)
 @app.route("/vagas")
 def vagas():
-    return jsonify(VAGAS)
+    return jsonify(VAGAS)   
 
 if __name__ == "__main__":
     app.run(debug=True)
